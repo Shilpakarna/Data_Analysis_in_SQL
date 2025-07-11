@@ -191,7 +191,7 @@ with most_order_pizza as(
   join pizza_types pt on pt.pizza_type_id = p.pizza_type_id
   group by 1,2
   order by 3 desc)
-select * from most_order 
+select * from most_order _pizza
 where rn<=3 order by rn asc
 
 
